@@ -19,10 +19,12 @@
       --shadow:0 10px 25px rgba(0,255,136,0.15);
       --glass: rgba(255,255,255,0.02);
     }
+
     *{box-sizing:border-box}
     html,body{height:100%;margin:0;padding:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased}
     body{display:flex;justify-content:center;padding:32px 16px}
     .wrap{max-width:var(--maxw);width:100%}
+
 
     /* header */
     header{display:flex;align-items:center;justify-content:space-between;padding:14px;border-radius:var(--radius);background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);backdrop-filter: blur(6px);}
@@ -184,13 +186,16 @@
   <h3>Selected Projects</h3>
   <div class="projects">
 
-    <div class="proj" tabindex="0" role="article" aria-label="AcaDexa">
-      <h4>AcaDexa — Academic Management Platform</h4>
-      <div class="meta">React · Firebase · Node.js · Tailwind</div>
-      <p>Collaboratively built web platform for managing courses, students, and assignments with secure authentication and real-time database integration.</p>
-      <a class="inline-link" href="https://aca-dexa-v2.vercel.app/" target="_blank" rel="noopener">Live Demo →</a>
-      <a class="inline-link" href="https://github.com/nanduri-amarnath/AcaDexa" target="_blank" rel="noopener" style="margin-left:10px;"></a>
-    </div>
+   <a href="https://aca-dexa-v2.vercel.app/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">
+  <div class="proj clickable-card" tabindex="0" role="article" aria-label="AcaDexa v2 Project">
+    <h4>AcaDexa v2 — Academic Management Platform</h4>
+    <div class="meta">React · Firebase · Tailwind CSS · Node.js</div>
+    <p style="margin-top:8px">
+      Collaboratively built web platform for managing courses, students, and assignments with secure authentication and real-time database integration.
+    </p>
+    <p style="margin-top:8px;color:var(--accent);font-weight:500;">Click to view Live Demo →</p>
+  </div>
+</a>
 
     <div class="proj" tabindex="0" role="article" aria-label="Smart Tire Monitoring System">
       <h4>Smart Tire Monitoring System</h4>
@@ -219,6 +224,29 @@
   <p>Designed a power-efficient 8-bit ALU with dynamic module-level clock gating. Demonstrated reduced switching activity and improved energy efficiency through simulation.</p>
   <a class="inline-link" href="https://github.com/nanduri-amarnath/adaptive-lowpower-alu" target="_blank"></a>
 </div>
+
+
+<!-- Adaptive Bidirectional Converter Project -->
+<div class="proj" tabindex="0" role="article" aria-label="Adaptive Bidirectional Converter">
+  <h4>Adaptive Bidirectional Converter — Battery ↔ Supercapacitor</h4>
+  <div class="meta">Power Electronics · DC–DC Converter · MATLAB Simulink</div>
+  <p style="margin-top:8px">
+    Designed and simulated a bidirectional buck–boost converter for a hybrid
+    battery–supercapacitor storage system. Implemented an Adaptive Transient
+    Management (ATM) controller that predicts sudden load changes and
+    dynamically shifts current between energy sources to reduce battery stress.
+  </p>
+  <ul style="color:#cfeee0;font-size:13px;margin-top:8px;margin-left:20px;">
+    <li>Simulink model with ATM control logic (NORMAL / STM / RECHARGE modes)</li>
+    <li>Supercapacitor absorbs transients, improving response time and lifespan</li>
+    <li>Achieved ~35% reduction in peak battery current in simulations</li>
+  </ul>
+  <p style="margin-top:8px">
+    <a class="inline-link" href="#" target="_blank" rel="noopener"></a>
+  </p>
+</div>
+
+
 
   </div>
 </div>
